@@ -1,0 +1,21 @@
+/* ---------- Top Bar ---------- */
+.top-bar {
+  height: 30px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-bar__text {
+  font-size: 14px;
+  font-weight: var(--fw-bold);
+  text-align: center;
+}
+
+.top-bar__highlight {
+  background-color: #6220C1;
+  padding: 2px 6px;
+  border-radius: 3px;
+}

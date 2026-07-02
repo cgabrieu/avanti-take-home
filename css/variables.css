@@ -1,0 +1,12 @@
+:root {
+  /* Typography */
+  --font-primary: 'Nunito Sans', sans-serif;
+  --fw-bold: 700;
+
+  /* Colors - Base */
+  --color-white: #FFFFFF;
+  --color-primary: #005CFF;
+
+  /* Layout */
+  --container-padding: 1rem;
+}
