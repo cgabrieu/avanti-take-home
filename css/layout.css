@@ -1,0 +1,102 @@
+/* ---------- Header ---------- */
+/* ---------- Header ---------- */
+.header {
+  background-color: var(--color-white);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
+}
+
+/* Área Principal */
+.header__main {
+  height: 118px;
+  display: flex;
+  align-items: center;
+}
+
+.header__main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header__logo img {
+  width: auto;
+  height: 27px;
+}
+
+/* Ações (usuário + carrinho) */
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__user-icon {
+  width: 20px;
+  height: 24px;
+}
+
+.header__user-text {
+  font-size: 14px;
+  font-weight: var(--fw-semibold);
+  line-height: 14px;
+  color: var(--color-black);
+}
+
+.header__cart {
+  position: relative;
+  display: block;
+}
+
+.header__cart-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header__cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: var(--fw-bold);
+  line-height: 14px;
+  border-radius: 50%;
+}
+
+/* Navegação */
+.header__nav {
+  padding: 12px 0;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.header__nav-item a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  line-height: 22px;
+  color: var(--color-black);
+}
+
+.header__nav-item--categories a {
+  font-weight: var(--fw-bold);
+}

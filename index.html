@@ -16,17 +16,76 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <main>
-      <!-- Top Bar -->
-      <div class="top-bar">
+    <!-- Header -->
+    <header class="header">
+      <!-- Announcement Bar -->
+      <div class="announcement-bar">
         <div class="container">
-          <p class="top-bar__text">
-            Ganhe <span class="top-bar__highlight">R$10,00</span> de desconto no seu primeiro
-            pedido. Utilize o cupom <strong>DESCONTO10</strong>
+          <p class="announcement-bar__text">
+            Ganhe <span class="announcement-bar__highlight">R$10,00</span> de desconto no seu
+            primeiro pedido. Utilize o cupom DESCONTO10
           </p>
         </div>
       </div>
-    </main>
+
+      <!-- Área Principal -->
+      <div class="header__main">
+        <div class="container header__main-container">
+          <!-- Logo -->
+          <a href="/" class="header__logo">
+            <img src="assets/images/logo-avanti.svg" alt="AVANTI" />
+          </a>
+
+          <!-- Busca -->
+          <div class="search-bar">
+            <input
+              type="text"
+              id="search-input"
+              class="search-bar__input"
+              placeholder="Digite aqui o que você procura"
+            />
+            <button id="search-button" class="search-bar__button" aria-label="Buscar">
+              <img src="assets/icons/search.svg" alt="" />
+            </button>
+          </div>
+
+          <!-- Ações -->
+          <div class="header__actions">
+            <a href="#" class="header__user">
+              <img src="assets/icons/user.svg" alt="" class="header__user-icon" />
+              <span class="header__user-text">Olá,<br />Nome cliente!</span>
+            </a>
+
+            <a href="#" class="header__cart">
+              <img src="assets/icons/cart.svg" alt="Carrinho" class="header__cart-icon" />
+              <span class="header__cart-badge">2</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navegação -->
+      <nav class="header__nav">
+        <div class="container">
+          <ul class="header__nav-list">
+            <li class="header__nav-item header__nav-item--categories">
+              <a href="#">
+                <img src="assets/icons/menu.svg" alt="" />
+                Todas as Categorias
+              </a>
+            </li>
+            <li class="header__nav-item"><a href="#">Departamento</a></li>
+            <li class="header__nav-item"><a href="#">Departamento</a></li>
+            <li class="header__nav-item"><a href="#">Departamento</a></li>
+            <li class="header__nav-item"><a href="#">Departamento</a></li>
+            <li class="header__nav-item"><a href="#">Departamento</a></li>
+            <li class="header__nav-item"><a href="#">Departamento</a></li>
+            <li class="header__nav-item"><a href="#">Departamento</a></li>
+            <li class="header__nav-item"><a href="#">Departamento</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>

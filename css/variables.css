@@ -1,12 +1,16 @@
 :root {
   /* Typography */
-  --font-primary: 'Nunito Sans', sans-serif;
+  --font-primary: "Nunito Sans", sans-serif;
+  --fw-regular: 400;
+  --fw-semibold: 600;
   --fw-bold: 700;
 
-  /* Colors - Base */
-  --color-white: #FFFFFF;
-  --color-primary: #005CFF;
+  /* Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-primary: #005cff;
 
   /* Layout */
+  --container-max: 1260px;
   --container-padding: 1rem;
 }

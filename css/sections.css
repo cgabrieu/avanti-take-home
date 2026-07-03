@@ -1,5 +1,5 @@
-/* ---------- Top Bar ---------- */
-.top-bar {
+/* ---------- Announcement Bar ---------- */
+.announcement-bar {
   height: 30px;
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -8,14 +8,15 @@
   justify-content: center;
 }
 
-.top-bar__text {
+.announcement-bar__text {
   font-size: 14px;
   font-weight: var(--fw-bold);
+  line-height: 22px;
   text-align: center;
 }
 
-.top-bar__highlight {
-  background-color: #6220C1;
-  padding: 2px 6px;
-  border-radius: 3px;
+.announcement-bar__highlight {
+  background-color: #6220c1;
+  padding: 0 6px;
+  border-radius: 4px;
 }

@@ -1,0 +1,19 @@
+/* ---------- Search Bar ---------- */
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 800px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0 16px;
+}
+
+.search-bar__input {
+  flex: 1;
+  height: 48px;
+}
+
+.search-bar__input::placeholder {
+  color: #7a7a7a;
+}
