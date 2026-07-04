@@ -1,4 +1,3 @@
-/* ---------- Announcement Bar ---------- */
 .announcement-bar {
   height: 30px;
   background-color: var(--color-primary);
@@ -21,7 +20,6 @@
   border-radius: 4px;
 }
 
-/* ---------- Hero Banner ---------- */
 .hero {
   display: flex;
   align-items: center;
@@ -98,4 +96,91 @@
 
 .hero__discount-light {
   font-weight: 300;
+}
+
+.new-arrivals {
+  padding: 60px 0;
+}
+
+.new-arrivals__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  max-width: 1319px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.new-arrivals__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+
+.new-arrivals__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-arrivals__title {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-weight: var(--fw-bold);
+  line-height: 27px;
+  color: var(--color-black);
+}
+
+.new-arrivals__view-more {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: var(--fw-bold);
+  line-height: 20px;
+  color: #303030;
+}
+
+.new-arrivals__swiper {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+
+.new-arrivals__nav {
+  flex-shrink: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  transition: opacity 150ms ease;
+}
+
+.new-arrivals__nav:hover {
+  opacity: 0.8;
+}
+
+.new-arrivals__nav img {
+  display: block;
+}
+
+.new-arrivals__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.new-arrivals__pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #838383;
+  opacity: 1;
+  border-radius: 50%;
+  transition: background-color 200ms ease;
+}
+
+.new-arrivals__pagination .swiper-pagination-bullet-active {
+  background-color: #303030;
 }
