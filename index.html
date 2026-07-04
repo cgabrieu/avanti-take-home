@@ -8,10 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Nunito+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -33,7 +36,7 @@
         <div class="container header__main-container">
           <!-- Logo -->
           <a href="/" class="header__logo">
-            <img src="assets/images/logo-avanti.svg" alt="AVANTI" />
+            <img src="assets/icons/logo-avanti.svg" alt="Avanti" />
           </a>
 
           <!-- Busca -->
@@ -45,14 +48,14 @@
               placeholder="Digite aqui o que você procura"
             />
             <button id="search-button" class="search-bar__button" aria-label="Buscar">
-              <img src="assets/icons/search.svg" alt="" />
+              <img src="assets/icons/search.svg" alt="Pesquisa" />
             </button>
           </div>
 
           <!-- Ações -->
           <div class="header__actions">
             <a href="#" class="header__user">
-              <img src="assets/icons/user.svg" alt="" class="header__user-icon" />
+              <img src="assets/icons/user.svg" alt="Usuário" class="header__user-icon" />
               <span class="header__user-text">Olá,<br />Nome cliente!</span>
             </a>
 
@@ -86,6 +89,25 @@
         </div>
       </nav>
     </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+      <div class="hero__image">
+        <img
+          src="assets/images/hero-banner.png"
+          alt="Super Sale - Itens selecionados com até 50% off"
+        />
+      </div>
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span class="hero__title-bold">SUPER</span><span class="hero__title-light">SALE</span>
+        </h1>
+        <p class="hero__subtitle">ITENS SELECIONADOS COM ATÉ</p>
+        <p class="hero__discount">
+          <span class="hero__discount-bold">50%OFF</span>
+        </p>
+      </div>
+    </section>
 
     <!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>

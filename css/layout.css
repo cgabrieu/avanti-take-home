@@ -1,11 +1,9 @@
 /* ---------- Header ---------- */
-/* ---------- Header ---------- */
 .header {
   background-color: var(--color-white);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
 }
 
-/* Área Principal */
 .header__main {
   height: 118px;
   display: flex;
@@ -24,7 +22,6 @@
   height: 27px;
 }
 
-/* Ações (usuário + carrinho) */
 .header__actions {
   display: flex;
   align-items: center;
@@ -76,7 +73,6 @@
   border-radius: 50%;
 }
 
-/* Navegação */
 .header__nav {
   padding: 12px 0;
 }
