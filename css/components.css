@@ -1,12 +1,12 @@
 .search-bar {
-  width: 560px;
+  width: 596px;
   display: flex;
   align-items: center;
   height: 38px;
   padding: 0 16px;
   border: 1px solid #dddddd;
   border-radius: 10px;
-  margin: 0 295px 0 60px;
+  margin-right: 270px;
 }
 
 .search-bar__input {

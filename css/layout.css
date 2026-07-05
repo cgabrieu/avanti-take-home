@@ -14,12 +14,14 @@
 .header__main-container {
   display: flex;
   align-items: center;
+  width: 1260px;
 }
 
 .header__logo img {
   width: auto;
   height: 27px;
   display: block;
+  margin-right: 57px;
 }
 
 .header__actions {
@@ -44,6 +46,7 @@
   font-weight: var(--fw-semibold);
   line-height: 14px;
   color: var(--color-black);
+  white-space: nowrap;
 }
 
 .header__cart {
