@@ -1,11 +1,12 @@
 .search-bar {
-  flex: 1;
+  width: 560px;
   display: flex;
   align-items: center;
   height: 38px;
   padding: 0 16px;
   border: 1px solid #dddddd;
   border-radius: 10px;
+  margin: 0 295px 0 60px;
 }
 
 .search-bar__input {
