@@ -359,3 +359,148 @@
   color: var(--color-white);
   text-align: center;
 }
+
+.newsletter {
+  padding: 60px 0;
+}
+
+.newsletter__title {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-bold);
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.newsletter__title span {
+  color: var(--color-primary);
+}
+
+.newsletter__box {
+  position: relative;
+  width: 100%;
+  max-width: 1260px;
+  height: 176px;
+  background: #dedede;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.newsletter__form {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.newsletter__group {
+  width: 280px;
+  height: 48px;
+}
+
+.newsletter__input {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 8px;
+  border: none;
+  padding: 0 24px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #303030;
+}
+
+.newsletter__input::placeholder {
+  color: #303030;
+}
+
+.newsletter__agreement {
+  display: flex;
+  align-items: center;
+  width: 279px;
+}
+
+.newsletter__checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.newsletter__checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.newsletter__checkbox:checked {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.newsletter__checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.newsletter__checkbox-label {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #656565;
+}
+
+.newsletter__checkbox-label a {
+  text-decoration: underline;
+  color: #656565;
+}
+
+.newsletter__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 24px;
+  width: 121px;
+  height: 48px;
+  background: #005cff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  transition: background-color 150ms ease;
+}
+
+.newsletter__button:hover {
+  background-color: #0044cc;
+}
