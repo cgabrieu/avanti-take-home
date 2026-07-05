@@ -96,3 +96,142 @@
 .header__nav-item--categories a {
   font-weight: var(--fw-bold);
 }
+
+.footer__top {
+  background: #f5f5f5;
+  padding: 64px 0 48px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer__logo img {
+  height: 27px;
+  width: auto;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.footer__social img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__title {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-bold);
+  font-size: 14px;
+  line-height: 20px;
+  color: #303030;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer__list h5,
+.footer__list a {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-bold);
+  font-size: 12px;
+  line-height: 16px;
+  color: #656565;
+}
+
+.footer__list p {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #656565;
+  margin-top: 4px;
+}
+
+.footer__list a:hover {
+  text-decoration: underline;
+}
+
+.footer__payments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer__payments img {
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.footer__bottom {
+  background: #ffffff;
+  padding: 40px 0;
+}
+
+.footer__disclaimer {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #303030;
+  max-width: 1074px;
+  margin: 0 auto 40px;
+}
+
+.footer__seals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer__seals img {
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.footer__seals .footer__seal-avanti {
+  height: 10px;
+}
+
+.footer__seals-divider {
+  width: 1px;
+  height: 15px;
+  background: #f5f5f5;
+}
+
+.footer__social-title {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-bold);
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
