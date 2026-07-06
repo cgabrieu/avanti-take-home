@@ -110,7 +110,7 @@
 .footer__container {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 110px;
   margin-bottom: 48px;
 }
 
@@ -118,6 +118,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding-left: 70px;
 }
 
 .footer__logo img {
@@ -160,10 +161,15 @@
 .footer__list h5,
 .footer__list a {
   font-family: var(--font-primary);
-  font-weight: var(--fw-bold);
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: #656565;
+}
+
+.footer__list strong {
+  font-weight: var(--fw-bold);
+  color: #303030;
 }
 
 .footer__list p {

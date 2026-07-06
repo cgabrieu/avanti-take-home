@@ -54,11 +54,12 @@
 
 .product-card__tag {
   position: absolute;
-  top: 7px;
+  top: 0;
   left: 0;
   z-index: 2;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: 4px 8px;
   min-width: 41px;
   min-height: 23px;
@@ -83,7 +84,6 @@
 .product-card__body {
   display: flex;
   flex-direction: column;
-  gap: 4px;
   padding-top: 16px;
   flex: 1;
 }
@@ -94,7 +94,7 @@
   font-weight: var(--fw-bold);
   line-height: 16px;
   color: #656565;
-  margin-bottom: 8px;
+  margin-bottom: 11px;
 }
 
 .product-card__old-price {

@@ -1,19 +1,25 @@
-document.querySelectorAll(".new-arrivals").forEach((section) => {
-  const swiperEl = section.querySelector(".new-arrivals__swiper");
-  const prevEl = section.querySelector(".new-arrivals__nav--prev");
-  const nextEl = section.querySelector(".new-arrivals__nav--next");
-  const paginationEl = section.querySelector(".new-arrivals__pagination");
+document.addEventListener("DOMContentLoaded", () => {
+  const carousels = document.querySelectorAll(".new-arrivals");
 
-  new Swiper(swiperEl, {
-    slidesPerView: 5,
-    spaceBetween: 17,
-    navigation: {
-      prevEl: prevEl,
-      nextEl: nextEl,
-    },
-    pagination: {
-      el: paginationEl,
-      clickable: true,
-    },
+  carousels.forEach((section) => {
+    const swiperEl = section.querySelector(".new-arrivals__swiper");
+    const prevBtn = section.querySelector(".new-arrivals__nav--prev");
+    const nextBtn = section.querySelector(".new-arrivals__nav--next");
+    const pagination = section.querySelector(".new-arrivals__pagination");
+
+    new Swiper(swiperEl, {
+      slidesPerView: 5,
+      slidesPerGroup: 5,
+      spaceBetween: 17,
+      navigation: {
+        nextEl: nextBtn,
+        prevEl: prevBtn,
+      },
+      pagination: {
+        el: pagination,
+        clickable: true,
+        type: "bullets",
+      },
+    });
   });
 });

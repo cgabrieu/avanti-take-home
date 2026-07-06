@@ -29,6 +29,7 @@
   gap: 87px;
   background-color: #e7e7ea;
   overflow: hidden;
+  margin-bottom: 100px;
 }
 
 .hero__image {
@@ -98,14 +99,7 @@
   font-weight: 300;
 }
 
-.new-arrivals {
-  padding: 60px 0;
-}
-
 .new-arrivals__wrapper {
-  display: flex;
-  align-items: center;
-  gap: 0;
   width: 100%;
   max-width: 1319px;
   margin: 0 auto;
@@ -113,11 +107,9 @@
 }
 
 .new-arrivals__content {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  min-width: 0;
 }
 
 .new-arrivals__header {
@@ -142,42 +134,69 @@
   color: #303030;
 }
 
+.new-arrivals__view-more:hover {
+  text-decoration: underline;
+}
+
+.new-arrivals__swiper-container {
+  position: relative;
+}
+
 .new-arrivals__swiper {
   width: 100%;
   overflow: hidden;
-  padding-bottom: 40px;
 }
 
 .new-arrivals__nav {
-  flex-shrink: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
-  background: none;
+  background: none no-repeat center;
+  background-size: contain;
   border: none;
   padding: 0;
-  transition: opacity 150ms ease;
+  filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.25));
+  transition: background-image 150ms ease;
 }
 
-.new-arrivals__nav:hover {
-  opacity: 0.8;
+.new-arrivals__nav--prev {
+  left: -15px;
+  background-image: url("../assets/icons/arrow-left.svg");
 }
 
-.new-arrivals__nav img {
-  display: block;
+.new-arrivals__nav--prev:hover {
+  background-image: url("../assets/icons/arrow-left-hover.svg");
+}
+
+.new-arrivals__nav--next {
+  right: -15px;
+  background-image: url("../assets/icons/arrow-right.svg");
+}
+
+.new-arrivals__nav--next:hover {
+  background-image: url("../assets/icons/arrow-right-hover.svg");
 }
 
 .new-arrivals__pagination {
+  position: static;
   display: flex;
   justify-content: center;
-  gap: 8px;
-  margin-top: 20px;
+  gap: 7px;
+  margin-top: 0px;
 }
 
 .new-arrivals__pagination .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   background-color: #838383;
   opacity: 1;
   border-radius: 50%;
+  margin: 0 !important;
+  cursor: pointer;
   transition: background-color 200ms ease;
 }
 
@@ -186,7 +205,8 @@
 }
 
 .showcase {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 80px;
 }
 
 .showcase__wrapper {
@@ -240,7 +260,8 @@
 
 .features {
   background-color: #dedede;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .features__wrapper {
@@ -321,6 +342,7 @@
   width: 100%;
   height: 660px;
   overflow: hidden;
+  margin-top: 60px;
 }
 
 .contact-banner__background {
@@ -361,7 +383,7 @@
 }
 
 .newsletter {
-  padding: 60px 0;
+  padding: 69px 0;
 }
 
 .newsletter__title {
