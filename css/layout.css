@@ -98,8 +98,16 @@
   white-space: nowrap;
 }
 
+.header__nav-item a:hover {
+  color: var(--color-primary);
+}
+
 .header__nav-item--categories a {
   font-weight: var(--fw-bold);
+}
+
+.header__nav-item--categories:hover > a img {
+  content: url("../assets/icons/menu-hover.svg");
 }
 
 .footer__top {
