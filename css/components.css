@@ -12,7 +12,6 @@
 .search-bar__input {
   flex: 1;
   height: 100%;
-  font-family: var(--font-primary);
   font-size: 14px;
   font-weight: var(--fw-semibold);
   color: var(--color-black);
@@ -63,7 +62,6 @@
   padding: 4px 8px;
   min-width: 41px;
   min-height: 23px;
-  font-family: var(--font-primary);
   font-size: 10px;
   font-weight: var(--fw-bold);
   line-height: 1;
@@ -89,20 +87,18 @@
 }
 
 .product-card__title {
-  font-family: var(--font-primary);
   font-size: 12px;
   font-weight: var(--fw-regular);
   line-height: 16px;
-  color: #303030;
+  color: var(--color-gray-800);
   margin-bottom: 11px;
 }
 
 .product-card__old-price {
-  font-family: var(--font-primary);
   font-size: 12px;
   font-weight: var(--fw-regular);
   line-height: 16px;
-  color: #303030;
+  color: var(--color-gray-800);
   text-decoration: line-through;
   text-transform: capitalize;
 }
@@ -114,7 +110,6 @@
 }
 
 .product-card__price {
-  font-family: var(--font-primary);
   font-size: 16px;
   font-weight: var(--fw-bold);
   line-height: 22px;
@@ -128,7 +123,6 @@
   padding: 4px 8px;
   background-color: #5ec0be;
   border-radius: 4px;
-  font-family: var(--font-primary);
   font-size: 11px;
   font-weight: var(--fw-bold);
   line-height: 12px;
@@ -138,11 +132,10 @@
 }
 
 .product-card__installments {
-  font-family: var(--font-primary);
   font-size: 12px;
   font-weight: var(--fw-regular);
   line-height: 16px;
-  color: #303030;
+  color: var(--color-gray-800);
   margin-top: 4px;
 }
 
@@ -156,7 +149,6 @@
   padding: 10px 24px;
   background-color: var(--color-primary);
   color: var(--color-white);
-  font-family: var(--font-primary);
   font-size: 14px;
   font-weight: var(--fw-bold);
   line-height: 20px;
@@ -242,7 +234,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-  font-family: var(--font-primary);
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -310,7 +301,6 @@
 
 .mega-menu__dept-title {
   margin: 0;
-  font-family: var(--font-primary);
   font-weight: var(--fw-bold);
   font-size: 16px;
   line-height: 22px;
@@ -340,7 +330,6 @@
 }
 
 .mega-menu__column a {
-  font-family: var(--font-primary);
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -397,7 +386,6 @@
 }
 
 .mega-menu__banner-text {
-  font-family: var(--font-primary);
   font-weight: 400;
   font-size: 24px;
   line-height: 27px;
@@ -416,7 +404,6 @@
   height: 38px;
   border: 1px solid #fff;
   border-radius: 8px;
-  font-family: var(--font-primary);
   font-weight: var(--fw-bold);
   font-size: 12px;
   line-height: 18px;
