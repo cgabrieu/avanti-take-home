@@ -266,19 +266,21 @@
     font-size: 16px;
     line-height: 1.4;
   }
-
   .newsletter {
-    padding: 50px 0;
-    margin-top: 10px;
+    padding: 40px 0;
   }
 
   .newsletter__title {
     font-size: 16px;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .newsletter__box {
     height: auto;
-    padding: 24px 16px;
+    padding: 40px 16px;
+    background: #f5f5f5;
   }
 
   .newsletter__form {
@@ -291,6 +293,17 @@
   .newsletter__agreement,
   .newsletter__button {
     width: 100%;
+  }
+
+  .newsletter__agreement {
+    width: auto;
+  }
+
+  .newsletter__checkbox-label {
+    font-weight: var(--fw-bold);
+    font-size: 12px;
+    line-height: 16px;
+    color: #656565;
   }
 
   .footer__top {
