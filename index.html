@@ -38,19 +38,21 @@
             <img src="assets/icons/logo-avanti.svg" alt="Avanti" />
           </a>
 
-          <form class="search-bar" role="search">
-            <input
-              type="text"
-              id="search-input"
-              class="search-bar__input"
-              placeholder="Digite aqui o que você procura"
-            />
-            <button id="search-button" class="search-bar__button" aria-label="Buscar">
-              <img src="assets/icons/search.svg" alt="Pesquisa" />
-            </button>
-          </form>
+          <div class="search-bar-wrapper">
+            <form class="search-bar" role="search">
+              <input
+                type="text"
+                id="search-input"
+                class="search-bar__input"
+                placeholder="Digite aqui o que você procura"
+              />
+              <button id="search-button" class="search-bar__button" aria-label="Buscar">
+                <img src="assets/icons/search.svg" alt="Pesquisa" />
+              </button>
+            </form>
 
-          <p class="search-result" id="search-result" aria-live="polite" hidden></p>
+            <p class="search-result" id="search-result" aria-live="polite" hidden></p>
+          </div>
 
           <div class="header__actions">
             <a href="#" class="header__user">

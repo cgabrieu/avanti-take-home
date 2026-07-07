@@ -1,12 +1,18 @@
-.search-bar {
+.search-bar-wrapper {
   width: 596px;
+  margin-right: 270px;
+  position: relative;
+}
+
+.search-bar {
+  width: 100%;
   display: flex;
   align-items: center;
   height: 38px;
   padding: 0 16px;
   border: 1px solid #dddddd;
   border-radius: var(--radius-lg);
-  margin-right: 270px;
+  margin-right: 0;
 }
 
 .search-bar__input {
@@ -28,8 +34,10 @@
 }
 
 .search-result {
-  width: 596px;
-  margin-right: 270px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
   margin-top: 8px;
   font-size: 14px;
   color: var(--color-gray-800);
