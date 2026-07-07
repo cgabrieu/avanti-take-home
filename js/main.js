@@ -84,16 +84,36 @@ document.querySelectorAll(".footer__column").forEach((column) => {
 const searchForm = document.querySelector(".search-bar");
 const searchInput = document.getElementById("search-input");
 const searchResult = document.getElementById("search-result");
+const searchResultText = document.querySelector(".search-result__text");
+const searchWrapper = document.querySelector(".search-bar-wrapper");
 
-if (searchForm && searchInput && searchResult) {
+if (searchForm && searchInput && searchResult && searchResultText && searchWrapper) {
+  const closeSearch = () => {
+    searchResult.classList.remove("is-visible");
+
+    setTimeout(() => {
+      searchResult.hidden = true;
+    }, 600);
+  };
+
   searchForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const query = searchInput.value.trim();
 
     if (!query) return;
 
-    searchResult.innerHTML = `Você buscou por: <strong>"${escapeHtml(query)}"</strong>`;
+    searchResultText.innerHTML = `Você buscou por: <strong>"${escapeHtml(query)}"</strong>`;
     searchResult.hidden = false;
+
+    void searchResult.offsetWidth;
+
+    searchResult.classList.add("is-visible");
+  });
+
+  document.addEventListener("click", (event) => {
+    if (searchResult.classList.contains("is-visible") && !searchWrapper.contains(event.target)) {
+      closeSearch();
+    }
   });
 }
 

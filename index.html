@@ -47,11 +47,13 @@
                 placeholder="Digite aqui o que você procura"
               />
               <button id="search-button" class="search-bar__button" aria-label="Buscar">
-                <img src="assets/icons/search.svg" alt="Pesquisa" />
+                <img src="assets/icons/search.svg" alt="Pesquisa" class="search-bar__icon" />
               </button>
             </form>
 
-            <p class="search-result" id="search-result" aria-live="polite" hidden></p>
+            <p class="search-result" id="search-result" aria-live="polite" hidden>
+              <span class="search-result__text"></span>
+            </p>
           </div>
 
           <div class="header__actions">
