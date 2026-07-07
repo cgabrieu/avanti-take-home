@@ -65,3 +65,14 @@ function generateSlides(count) {
 
   return slide.repeat(count);
 }
+
+document.querySelectorAll(".footer__column").forEach((column) => {
+  const title = column.querySelector(".footer__title");
+  const list = column.querySelector(".footer__list");
+
+  if (!title || !list) return;
+
+  title.addEventListener("click", () => {
+    column.classList.toggle("is-open");
+  });
+});

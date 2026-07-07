@@ -307,20 +307,22 @@
   }
 
   .footer__top {
-    padding: 32px 0 24px;
+    padding: 0;
   }
 
   .footer__container {
     flex-direction: column;
-    gap: 24px;
-    margin-bottom: 32px;
+    gap: 0;
+    margin-bottom: 0;
+    padding: 0;
   }
 
   .footer__brand {
-    padding-left: 0;
+    padding: 40px 16px;
     align-items: center;
     text-align: center;
-    gap: 20px;
+    gap: 40px;
+    border-bottom: 1px solid #dddddd;
   }
 
   .footer__social {
@@ -329,35 +331,80 @@
   }
 
   .footer__column {
-    border-top: 1px solid #dddddd;
-    padding-top: 16px;
+    padding: 16px;
+    border-bottom: 1px solid #dddddd;
+    gap: 0;
   }
 
   .footer__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: var(--font-primary);
+    font-weight: var(--fw-bold);
+    font-size: 16px;
+    line-height: 1;
+    text-transform: none;
+    cursor: pointer;
+    margin: 0;
   }
 
   .footer__title::after {
-    content: ">";
-    font-weight: var(--fw-regular);
-    color: var(--color-gray-800);
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    transform: rotate(45deg);
+    margin-right: 8px;
+    transition: transform 200ms ease;
+  }
+
+  .footer__column.is-open .footer__title::after {
+    transform: rotate(-135deg);
+    margin-top: 4px;
+  }
+
+  .footer__list {
+    display: none;
+  }
+
+  .footer__column.is-open .footer__list {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 14px;
+    padding-top: 16px;
+    animation: expand 300ms ease;
+  }
+
+  .footer__list > * {
+    min-height: 0;
+  }
+
+  @keyframes expand {
+    from {
+      grid-template-rows: 0fr;
+      opacity: 0;
+    }
+    to {
+      grid-template-rows: 1fr;
+      opacity: 1;
+    }
   }
 
   .footer__payments {
-    gap: 12px;
+    padding: 40px 60px;
+    gap: 30px;
     row-gap: 16px;
   }
 
   .footer__bottom {
-    padding: 24px 0;
+    padding: 24px 16px;
   }
 
   .footer__disclaimer {
     font-size: 11px;
     line-height: 16px;
-    text-align: left;
     margin-bottom: 24px;
   }
 
