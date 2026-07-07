@@ -27,6 +27,19 @@
   justify-content: center;
 }
 
+.search-result {
+  width: 596px;
+  margin-right: 270px;
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--color-gray-800);
+}
+
+.search-result strong {
+  color: var(--color-primary);
+  font-weight: var(--fw-bold);
+}
+
 .product-card {
   display: flex;
   flex-direction: column;

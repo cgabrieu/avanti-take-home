@@ -80,3 +80,25 @@ document.querySelectorAll(".footer__column").forEach((column) => {
     column.classList.toggle("is-open");
   });
 });
+
+const searchForm = document.querySelector(".search-bar");
+const searchInput = document.getElementById("search-input");
+const searchResult = document.getElementById("search-result");
+
+if (searchForm && searchInput && searchResult) {
+  searchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const query = searchInput.value.trim();
+
+    if (!query) return;
+
+    searchResult.innerHTML = `Você buscou por: <strong>"${escapeHtml(query)}"</strong>`;
+    searchResult.hidden = false;
+  });
+}
+
+function escapeHtml(text) {
+  const div = document.createElement("div");
+  div.textContent = text;
+  return div.innerHTML;
+}
