@@ -32,7 +32,7 @@
             <img src="assets/icons/logo-avanti.svg" alt="Avanti" />
           </a>
 
-          <div class="search-bar">
+          <form class="search-bar" role="search">
             <input
               type="text"
               id="search-input"
@@ -42,7 +42,7 @@
             <button id="search-button" class="search-bar__button" aria-label="Buscar">
               <img src="assets/icons/search.svg" alt="Pesquisa" />
             </button>
-          </div>
+          </form>
 
           <div class="header__actions">
             <a href="#" class="header__user">
@@ -636,1007 +636,1015 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero__image">
-        <img
-          src="assets/images/hero-banner.png"
-          alt="Super Sale - Itens selecionados com até 50% off"
-        />
-      </div>
-      <div class="hero__content">
-        <h1 class="hero__title">
-          <span class="hero__title-bold">SUPER</span><span class="hero__title-light">SALE</span>
-        </h1>
-        <p class="hero__subtitle">ITENS SELECIONADOS COM ATÉ</p>
-        <p class="hero__discount">
-          <span class="hero__discount-bold">50%OFF</span>
-        </p>
-      </div>
-    </section>
+    <main>
+      <section class="hero">
+        <div class="hero__image">
+          <img
+            src="assets/images/hero-banner.png"
+            alt="Super Sale - Itens selecionados com até 50% off"
+          />
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <span class="hero__title-bold">SUPER</span><span class="hero__title-light">SALE</span>
+          </h1>
+          <p class="hero__subtitle">ITENS SELECIONADOS COM ATÉ</p>
+          <p class="hero__discount">
+            <span class="hero__discount-bold">50%OFF</span>
+          </p>
+        </div>
+      </section>
 
-    <section class="new-arrivals">
-      <div class="new-arrivals__wrapper">
-        <div class="new-arrivals__content">
-          <div class="new-arrivals__header">
-            <h2 class="new-arrivals__title">Lançamentos</h2>
-            <a href="#" class="new-arrivals__view-more">Ver mais</a>
-          </div>
+      <section class="new-arrivals">
+        <div class="new-arrivals__wrapper">
+          <div class="new-arrivals__content">
+            <div class="new-arrivals__header">
+              <h2 class="new-arrivals__title">Lançamentos</h2>
+              <a href="#" class="new-arrivals__view-more">Ver mais</a>
+            </div>
 
-          <div class="new-arrivals__swiper-container">
-            <button
-              class="new-arrivals__nav new-arrivals__nav--prev"
-              aria-label="Anterior"
-            ></button>
+            <div class="new-arrivals__swiper-container">
+              <button
+                class="new-arrivals__nav new-arrivals__nav--prev"
+                aria-label="Anterior"
+              ></button>
 
-            <div class="swiper new-arrivals__swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+              <div class="swiper new-arrivals__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
-
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
+                      </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
                 </div>
               </div>
+
+              <button
+                class="new-arrivals__nav new-arrivals__nav--next"
+                aria-label="Próximo"
+              ></button>
             </div>
 
-            <button class="new-arrivals__nav new-arrivals__nav--next" aria-label="Próximo"></button>
-          </div>
-
-          <div class="new-arrivals__pagination swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="showcase">
-      <div class="container">
-        <div class="showcase__wrapper">
-          <div class="showcase__image">
-            <img src="assets/images/mug.png" alt="Caneca Avanti" />
-          </div>
-
-          <div class="showcase__content">
-            <h2 class="showcase__title">LOREM IPSUM</h2>
-            <p class="showcase__text">
-              Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris
-              laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus
-              lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a.
-              Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci,
-              auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo
-              egestas efficitur id augue.
-            </p>
-            <p class="showcase__text">
-              Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris
-              laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus
-              lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a.
-              Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci,
-              auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo
-              egestas efficitur id augue.
-            </p>
+            <div class="new-arrivals__pagination swiper-pagination"></div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="features">
-      <div class="container">
-        <div class="features__wrapper">
-          <div class="features__content">
-            <h2 class="features__title">LOREM IPSUM</h2>
+      <section class="showcase">
+        <div class="container">
+          <div class="showcase__wrapper">
+            <div class="showcase__image">
+              <img src="assets/images/mug.png" alt="Caneca Avanti" />
+            </div>
 
-            <ul class="features__list">
-              <li class="features__item">
-                <div class="features__icon">
-                  <img src="assets/icons/map-pin.svg" alt="" />
-                </div>
-                <p class="features__text">
-                  Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                  quis, sem.
-                </p>
-              </li>
-
-              <li class="features__item">
-                <div class="features__icon">
-                  <img src="assets/icons/map-pin.svg" alt="" />
-                </div>
-                <p class="features__text">
-                  Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                  quis, sem.
-                </p>
-              </li>
-
-              <li class="features__item">
-                <div class="features__icon">
-                  <img src="assets/icons/map-pin.svg" alt="" />
-                </div>
-                <p class="features__text">
-                  Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                  quis, sem.
-                </p>
-              </li>
-            </ul>
-          </div>
-
-          <div class="features__image">
-            <img src="assets/images/mug-real.png" alt="Caneca Avanti" />
+            <div class="showcase__content">
+              <h2 class="showcase__title">LOREM IPSUM</h2>
+              <p class="showcase__text">
+                Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris
+                laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus
+                lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a.
+                Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci,
+                auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo
+                egestas efficitur id augue.
+              </p>
+              <p class="showcase__text">
+                Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris
+                laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus
+                lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a.
+                Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci,
+                auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo
+                egestas efficitur id augue.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="showcase">
-      <div class="container">
-        <div class="showcase__wrapper">
-          <div class="showcase__image">
-            <img src="assets/images/mug.png" alt="Caneca Avanti" />
-          </div>
+      <section class="features">
+        <div class="container">
+          <div class="features__wrapper">
+            <div class="features__content">
+              <h2 class="features__title">LOREM IPSUM</h2>
 
-          <div class="showcase__content">
-            <h2 class="showcase__title">LOREM IPSUM</h2>
-            <p class="showcase__text">
-              Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris
-              laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus
-              lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a.
-              Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci,
-              auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo
-              egestas efficitur id augue.
-            </p>
-            <p class="showcase__text">
-              Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris
-              laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus
-              lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a.
-              Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci,
-              auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo
-              egestas efficitur id augue.
-            </p>
+              <ul class="features__list">
+                <li class="features__item">
+                  <div class="features__icon">
+                    <img src="assets/icons/map-pin.svg" alt="" />
+                  </div>
+                  <p class="features__text">
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                    pretium quis, sem.
+                  </p>
+                </li>
+
+                <li class="features__item">
+                  <div class="features__icon">
+                    <img src="assets/icons/map-pin.svg" alt="" />
+                  </div>
+                  <p class="features__text">
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                    pretium quis, sem.
+                  </p>
+                </li>
+
+                <li class="features__item">
+                  <div class="features__icon">
+                    <img src="assets/icons/map-pin.svg" alt="" />
+                  </div>
+                  <p class="features__text">
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                    pretium quis, sem.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="features__image">
+              <img src="assets/images/mug-real.png" alt="Caneca Avanti" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="new-arrivals">
-      <div class="new-arrivals__wrapper">
-        <div class="new-arrivals__content">
-          <div class="new-arrivals__header">
-            <h2 class="new-arrivals__title">Lançamentos</h2>
-            <a href="#" class="new-arrivals__view-more">Ver mais</a>
+      <section class="showcase">
+        <div class="container">
+          <div class="showcase__wrapper">
+            <div class="showcase__image">
+              <img src="assets/images/mug.png" alt="Caneca Avanti" />
+            </div>
+
+            <div class="showcase__content">
+              <h2 class="showcase__title">LOREM IPSUM</h2>
+              <p class="showcase__text">
+                Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris
+                laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus
+                lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a.
+                Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci,
+                auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo
+                egestas efficitur id augue.
+              </p>
+              <p class="showcase__text">
+                Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris
+                laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus
+                lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a.
+                Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci,
+                auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo
+                egestas efficitur id augue.
+              </p>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="new-arrivals__swiper-container">
-            <button
-              class="new-arrivals__nav new-arrivals__nav--prev"
-              aria-label="Anterior"
-            ></button>
+      <section class="new-arrivals">
+        <div class="new-arrivals__wrapper">
+          <div class="new-arrivals__content">
+            <div class="new-arrivals__header">
+              <h2 class="new-arrivals__title">Lançamentos</h2>
+              <a href="#" class="new-arrivals__view-more">Ver mais</a>
+            </div>
 
-            <div class="swiper new-arrivals__swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+            <div class="new-arrivals__swiper-container">
+              <button
+                class="new-arrivals__nav new-arrivals__nav--prev"
+                aria-label="Anterior"
+              ></button>
+
+              <div class="swiper new-arrivals__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
-
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
-                </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
 
-                <div class="swiper-slide">
-                  <article class="product-card">
-                    <div class="product-card__image-wrapper">
-                      <span class="product-card__tag product-card__tag--new">NOVO</span>
-                      <img
-                        src="assets/images/product.png"
-                        alt="Produto"
-                        class="product-card__image"
-                      />
-                    </div>
-                    <div class="product-card__body">
-                      <h3 class="product-card__title">
-                        Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-                      </h3>
-                      <p class="product-card__old-price">R$ 100,00</p>
-                      <div class="product-card__price-row">
-                        <p class="product-card__price">R$79,90</p>
-                        <span class="product-card__discount">10% OFF</span>
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
                       </div>
-                      <p class="product-card__installments">
-                        Ou em até <strong>10x de R$ 7,90</strong>
-                      </p>
-                      <a href="#" class="product-card__button">Comprar</a>
-                    </div>
-                  </article>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article class="product-card">
+                      <div class="product-card__image-wrapper">
+                        <span class="product-card__tag product-card__tag--new">NOVO</span>
+                        <img
+                          src="assets/images/product.png"
+                          alt="Produto"
+                          class="product-card__image"
+                        />
+                      </div>
+                      <div class="product-card__body">
+                        <h3 class="product-card__title">
+                          Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                        </h3>
+                        <p class="product-card__old-price">R$ 100,00</p>
+                        <div class="product-card__price-row">
+                          <p class="product-card__price">R$79,90</p>
+                          <span class="product-card__discount">10% OFF</span>
+                        </div>
+                        <p class="product-card__installments">
+                          Ou em até <strong>10x de R$ 7,90</strong>
+                        </p>
+                        <a href="#" class="product-card__button">Comprar</a>
+                      </div>
+                    </article>
+                  </div>
                 </div>
               </div>
+
+              <button
+                class="new-arrivals__nav new-arrivals__nav--next"
+                aria-label="Próximo"
+              ></button>
             </div>
 
-            <button class="new-arrivals__nav new-arrivals__nav--next" aria-label="Próximo"></button>
+            <div class="new-arrivals__pagination swiper-pagination"></div>
           </div>
-
-          <div class="new-arrivals__pagination swiper-pagination"></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="contact-banner">
-      <div class="contact-banner__background">
-        <img src="assets/images/contact-banner.png" alt="" />
-      </div>
-      <div class="contact-banner__bar">
-        <p class="contact-banner__text">
-          Entre em contato conosco e verifique a disponibilidade para sua região!
-        </p>
-      </div>
-    </section>
+      <section class="contact-banner">
+        <div class="contact-banner__background">
+          <img src="assets/images/contact-banner.png" alt="" />
+        </div>
+        <div class="contact-banner__bar">
+          <p class="contact-banner__text">
+            Entre em contato conosco e verifique a disponibilidade para sua região!
+          </p>
+        </div>
+      </section>
 
-    <section class="newsletter">
-      <div class="container">
-        <h2 class="newsletter__title">Cadastre-se na nossa <span>newsletter</span></h2>
+      <section class="newsletter">
+        <div class="container">
+          <h2 class="newsletter__title">Cadastre-se na nossa <span>newsletter</span></h2>
 
-        <div class="newsletter__box">
-          <form class="newsletter__form">
-            <div class="newsletter__group">
-              <input type="text" class="newsletter__input" placeholder="Digite seu nome" />
-            </div>
-
-            <div class="newsletter__group">
-              <input type="email" class="newsletter__input" placeholder="Digite seu e-mail" />
-            </div>
-
-            <div class="newsletter__agreement">
-              <div class="newsletter__checkbox-wrapper">
-                <input type="checkbox" id="agreement" class="newsletter__checkbox" />
-                <label for="agreement" class="newsletter__checkbox-label">
-                  Estou de acordo com a <a href="#">Política de Privacidade</a>
-                </label>
+          <div class="newsletter__box">
+            <form class="newsletter__form">
+              <div class="newsletter__group">
+                <input type="text" class="newsletter__input" placeholder="Digite seu nome" />
               </div>
-            </div>
 
-            <button type="submit" class="newsletter__button">Cadastrar</button>
-          </form>
+              <div class="newsletter__group">
+                <input type="email" class="newsletter__input" placeholder="Digite seu e-mail" />
+              </div>
+
+              <div class="newsletter__agreement">
+                <div class="newsletter__checkbox-wrapper">
+                  <input type="checkbox" id="agreement" class="newsletter__checkbox" />
+                  <label for="agreement" class="newsletter__checkbox-label">
+                    Estou de acordo com a <a href="#">Política de Privacidade</a>
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="newsletter__button">Cadastrar</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__top">
