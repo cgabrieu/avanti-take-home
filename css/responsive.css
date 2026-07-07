@@ -245,20 +245,31 @@
 
   .contact-banner {
     height: 449px;
-    margin-top: 10px;
+    margin-top: 40px;
+  }
+
+  .contact-banner__background img {
+    object-fit: cover;
+    filter: blur(1px);
   }
 
   .contact-banner__bar {
-    height: auto;
-    padding: 20px 16px;
+    top: 193px;
+    transform: none;
+    height: 75px;
+    padding: 0 2px;
   }
 
   .contact-banner__text {
+    font-family: var(--font-display);
+    font-weight: var(--fw-semibold);
     font-size: 16px;
+    line-height: 1.4;
   }
 
   .newsletter {
-    padding: 40px 0;
+    padding: 50px 0;
+    margin-top: 10px;
   }
 
   .newsletter__title {
