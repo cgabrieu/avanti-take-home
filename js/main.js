@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
       slidesPerView: 2,
       slidesPerGroup: 1,
       spaceBetween: 9,
+      slidesOffsetBefore: 13,
+      slidesOffsetAfter: 13,
       navigation: {
         nextEl: nextBtn,
         prevEl: prevBtn,
@@ -27,6 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
           slidesPerView: 5,
           slidesPerGroup: 5,
           spaceBetween: 17,
+          slidesOffsetBefore: 0,
+          slidesOffsetAfter: 0,
         },
       },
     });
