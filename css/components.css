@@ -128,7 +128,6 @@
   line-height: 12px;
   color: var(--color-white);
   text-transform: uppercase;
-  text-decoration: underline;
 }
 
 .product-card__installments {

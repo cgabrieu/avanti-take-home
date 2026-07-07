@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const pagination = section.querySelector(".new-arrivals__pagination");
 
     new Swiper(swiperEl, {
-      slidesPerView: 1.5,
+      slidesPerView: 2,
       slidesPerGroup: 1,
-      spaceBetween: 12,
+      spaceBetween: 9,
       navigation: {
         nextEl: nextBtn,
         prevEl: prevBtn,

@@ -99,6 +99,10 @@
   font-weight: 300;
 }
 
+.new-arrivals {
+  padding: 40px 0 24px;
+}
+
 .new-arrivals__wrapper {
   width: 100%;
   max-width: 1319px;

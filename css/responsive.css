@@ -82,7 +82,7 @@
   .hero {
     height: 306px;
     gap: 0;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     padding: 0;
     justify-content: flex-start;
   }
@@ -133,7 +133,12 @@
   }
 
   .new-arrivals__view-more {
-    font-size: 12px;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+
+  .new-arrivals--secondary {
+    display: none;
   }
 
   .new-arrivals__nav {
@@ -142,33 +147,43 @@
 
   .product-card {
     height: auto;
-    min-height: 360px;
+    width: 181px;
   }
 
   .product-card__image-wrapper {
-    height: 160px;
+    height: 158px;
+  }
+
+  .product-card__installments {
+    margin-bottom: 10px;
   }
 
   .showcase {
     padding: 40px 0;
   }
 
+  .showcase .container {
+    padding: 0;
+    max-width: 100%;
+  }
+
   .showcase__wrapper {
     flex-direction: column;
-    gap: 24px;
+    gap: 40px;
   }
 
   .showcase__image {
     width: 100%;
-    height: 340px;
+    height: 391px;
   }
 
   .showcase__content {
     max-width: 100%;
+    padding: 0 25px;
   }
 
   .showcase__title {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .showcase__text {
@@ -176,7 +191,8 @@
   }
 
   .features {
-    padding: 40px 0 24px;
+    padding: 35px 10px;
+    margin-bottom: 20px;
   }
 
   .features__wrapper {
@@ -186,13 +202,14 @@
 
   .features__image {
     width: 100%;
-    height: 260px;
+    height: 349px;
     order: -1;
   }
 
   .features__title {
     font-size: 22px;
-    text-align: left;
+    text-align: center;
+    color: var(--color-black);
   }
 
   .features__content {
@@ -200,30 +217,35 @@
   }
 
   .features__list {
-    gap: 20px;
+    gap: 29px;
   }
 
   .features__item {
-    gap: 16px;
+    gap: 14px;
+    align-items: center;
   }
 
   .features__icon {
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
   }
 
   .features__icon img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
   }
 
   .features__text {
-    font-size: 13px;
+    font-family: var(--font-display);
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    color: var(--color-black);
   }
 
   .contact-banner {
-    height: 240px;
-    margin-top: 40px;
+    height: 449px;
+    margin-top: 10px;
   }
 
   .contact-banner__bar {
