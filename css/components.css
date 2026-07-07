@@ -281,14 +281,17 @@
 }
 
 .mega-menu--categories .mega-menu__content {
-  padding-right: 281px;
   border-radius: 0 0 8px 0;
 }
 
 .mega-menu--department .mega-menu__content {
   flex-direction: column;
-  padding-right: 281px;
   border-radius: 0 0 8px 8px;
+}
+
+.mega-menu--categories .mega-menu__content,
+.mega-menu--department .mega-menu__content {
+  padding-right: 281px;
 }
 
 .mega-menu__top {
@@ -409,4 +412,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #fff;
+}
+
+.mega-menu__department a,
+.mega-menu__banner,
+.header__user,
+.new-arrivals__view-more {
+  cursor: pointer;
 }
