@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const pagination = section.querySelector(".new-arrivals__pagination");
 
     new Swiper(swiperEl, {
-      slidesPerView: 5,
-      slidesPerGroup: 5,
-      spaceBetween: 17,
+      slidesPerView: 1.5,
+      slidesPerGroup: 1,
+      spaceBetween: 12,
       navigation: {
         nextEl: nextBtn,
         prevEl: prevBtn,
@@ -21,6 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
         el: pagination,
         clickable: true,
         type: "bullets",
+      },
+      breakpoints: {
+        769: {
+          slidesPerView: 5,
+          slidesPerGroup: 5,
+          spaceBetween: 17,
+        },
       },
     });
   });
@@ -34,7 +41,7 @@ function generateSlides(count) {
           <span class="product-card__tag product-card__tag--new">NOVO</span>
           <img
             src="assets/images/product.png"
-            alt="Caneca personalizada Avanti"
+            alt="Produto"
             class="product-card__image"
             loading="lazy"
           />

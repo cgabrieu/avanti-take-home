@@ -1,61 +1,78 @@
 @media (max-width: 768px) {
   .container {
-    padding: 0 16px;
+    padding: 0 13px;
   }
 
   .announcement-bar {
     height: auto;
-    padding: 6px 12px;
+    min-height: 47px;
+    padding: 6px 22px;
   }
 
   .announcement-bar__text {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .header {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   .header__main {
-    padding: 12px 0;
+    padding: 20px 0;
   }
 
   .header__main-container {
     width: 100%;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
     align-items: center;
-    gap: 12px;
-  }
-
-  .header__logo {
-    order: 2;
-    margin: 0 auto;
-  }
-
-  .header__logo img {
-    height: 22px;
-    margin-right: 0;
+    row-gap: 35px;
   }
 
   .header__main-container::before {
     content: "";
-    order: 1;
+    grid-column: 1;
+    grid-row: 1;
     width: 24px;
-    height: 24px;
+    height: 18px;
     background: url("../assets/icons/menu.svg") no-repeat center / contain;
     cursor: pointer;
   }
 
+  .header__logo {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    margin: 0;
+  }
+
+  .header__logo img {
+    margin-right: 0;
+  }
+
   .header__actions {
-    order: 3;
-    gap: 16px;
+    grid-column: 3;
+    grid-row: 1;
+    gap: 0;
   }
 
   .header__user {
     display: none;
   }
 
+  .header__cart-badge {
+    top: -6px;
+    right: -6px;
+  }
+
   .search-bar {
-    order: 4;
+    grid-column: 1 / -1;
+    grid-row: 2;
     width: 100%;
     margin-right: 0;
+    height: 50px;
   }
 
   .header__nav {
@@ -63,37 +80,48 @@
   }
 
   .hero {
-    flex-direction: column;
-    height: auto;
-    gap: 24px;
-    padding-bottom: 32px;
-    margin-bottom: 40px;
+    height: 306px;
+    gap: 0;
+    margin-bottom: 60px;
+    padding: 0;
+    justify-content: flex-start;
   }
 
   .hero__image {
-    width: 100%;
-    height: 220px;
+    width: 225px;
+    height: 100%;
+  }
+
+  .hero__image img {
+    object-position: 76% center;
   }
 
   .hero__content {
-    gap: 8px;
-    padding: 0 16px;
+    flex: 1;
+    gap: 12px;
+    padding: 0;
+    align-items: center;
   }
 
   .hero__title {
-    font-size: 56px;
-    line-height: 68px;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    line-height: 40px;
+    width: 140px;
   }
 
   .hero__subtitle {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.15em;
+    width: 140px;
   }
 
   .hero__discount {
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 32px;
+    line-height: 44px;
+    width: 140px;
   }
 
   .new-arrivals__wrapper {
