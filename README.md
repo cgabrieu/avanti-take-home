@@ -2,6 +2,8 @@
 
 Landing page desenvolvida como teste técnico. Reproduz o layout do Figma com versões desktop e mobile.
 
+🔗 **Demo:** [avanti-take-home.cgabrieu.online](https://avanti-take-home.cgabrieu.online)
+
 ### Tecnologias
 
 - HTML5
@@ -11,28 +13,28 @@ Landing page desenvolvida como teste técnico. Reproduz o layout do Figma com ve
 
 ### Estrutura
 
-```
+\`\`\`
 .
 ├── index.html
 ├── assets/
-│   ├── icons/
-│   └── images/
+│ ├── icons/
+│ └── images/
 ├── css/
-│   ├── main.css
-│   ├── variables.css
-│   ├── reset.css
-│   ├── layout.css
-│   ├── components.css
-│   ├── sections.css
-│   └── responsive.css
+│ ├── main.css
+│ ├── variables.css
+│ ├── reset.css
+│ ├── layout.css
+│ ├── components.css
+│ ├── sections.css
+│ └── responsive.css
 └── js/
-    ├── main.js
-    └── modules/
-        ├── carousel.js
-        ├── footer.js
-        ├── search.js
-        └── utils.js
-```
+├── main.js
+└── modules/
+├── carousel.js
+├── footer.js
+├── search.js
+└── utils.js
+\`\`\`
 
 O CSS foi separado por responsabilidade (variáveis, reset, layout, componentes, seções e responsivo). O JS usa ES Modules — cada funcionalidade em seu próprio módulo.
 
@@ -46,9 +48,9 @@ Instale a extensão _Live Server_ e clique com o botão direito no `index.html` 
 
 **Opção 2 — Terminal**
 
-```bash
+\`\`\`bash
 npx serve
-```
+\`\`\`
 
 Depois acesse `http://localhost:3000`.
 
