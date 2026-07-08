@@ -2,7 +2,7 @@
 
 Landing page desenvolvida como teste técnico. Reproduz o layout do Figma com versões desktop e mobile.
 
-🔗 **Demo:** [avanti-take-home.cgabrieu.online](https://avanti-take-home.cgabrieu.online)
+🔗 **Demo:** [avanti-store.cgabrieu.online](https://avanti-store.cgabrieu.online)
 
 ### Tecnologias
 
