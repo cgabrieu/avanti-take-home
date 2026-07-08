@@ -1,4 +1,4 @@
-## Avanti - Loja Online
+## Avanti - Landing page take home
 
 Landing page desenvolvida como teste técnico. Reproduz o layout do Figma com versões desktop e mobile.
 
